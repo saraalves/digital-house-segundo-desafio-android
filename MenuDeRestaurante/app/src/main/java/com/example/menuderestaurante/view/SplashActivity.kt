@@ -19,9 +19,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(FEATURE_NO_TITLE)
-        colocarActivityEmFullScreen()
         setContentView(R.layout.activity_splash)
-
 
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, LoginActivity::class.java)
@@ -30,15 +28,4 @@ class SplashActivity : AppCompatActivity() {
         }, DURACAO_DO_SPLASH)
     }
 
-    @Suppress("DEPRECATION")
-    private fun colocarActivityEmFullScreen() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.insetsController?.hide(WindowInsets.Type.statusBars())
-        } else {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        }
-    }
 }

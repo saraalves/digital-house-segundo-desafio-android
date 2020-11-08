@@ -13,21 +13,83 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        inflarMenuHome()
+
+    }
+
+    private fun inflarMenuHome() {
         val linearManager = LinearLayoutManager(this)
         val recyclerViewHome = findViewById<RecyclerView>(R.id.recyclerHome)
-        val adapterMenuHome = AdapterMenu(arrayListOf(
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", "")
-        ))
+        val adapterMenuHome = AdapterMenu(
+            arrayListOf(
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                ),
+                Menu(
+                    "Tony Roma's",
+                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                    "Fecha às 22:00",
+                    ""
+                )
+            )
+        )
 
         recyclerViewHome.apply {
             setHasFixedSize(true)
@@ -35,24 +97,6 @@ class HomeActivity : AppCompatActivity() {
             adapter = adapterMenuHome
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
-
     }
 
-//    fun inflarMenu(menu: List<Menu>) {
-//        val linearManager = LinearLayoutManager(this)
-//        val recyclerViewHome = findViewById<RecyclerView>(R.id.recyclerHome)
-//        val adapterMenuHome = AdapterMenu(arrayListOf(
-//            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-//            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", ""),
-//            Menu("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", "")
-//        ))
-//
-//        recyclerViewHome.apply {
-//            setHasFixedSize(true)
-//            layoutManager = linearManager
-//            adapter = adapterMenuHome
-//            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-//        }
-//
-//    }
 }

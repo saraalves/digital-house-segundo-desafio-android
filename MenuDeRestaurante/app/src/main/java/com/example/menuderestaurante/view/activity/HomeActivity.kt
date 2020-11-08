@@ -1,4 +1,4 @@
-package com.example.menuderestaurante.view
+package com.example.menuderestaurante.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.Menu
+import com.example.menuderestaurante.view.AdapterMenu
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

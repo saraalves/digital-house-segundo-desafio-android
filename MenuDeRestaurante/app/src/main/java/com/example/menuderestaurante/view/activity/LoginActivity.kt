@@ -1,4 +1,4 @@
-package com.example.menuderestaurante.view
+package com.example.menuderestaurante.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

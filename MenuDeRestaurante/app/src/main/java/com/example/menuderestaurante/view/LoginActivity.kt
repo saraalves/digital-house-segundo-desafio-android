@@ -11,7 +11,19 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        findViewById<Button>(R.id.btnRegisterLogin).setOnClickListener{
+        navigationToHome()
+        navigationToRegister()
+    }
+
+    fun navigationToHome() {
+        findViewById<Button>(R.id.btnLogin).setOnClickListener {
+            intent = Intent(this@LoginActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun navigationToRegister() {
+        findViewById<Button>(R.id.btnRegisterLogin).setOnClickListener {
             intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }

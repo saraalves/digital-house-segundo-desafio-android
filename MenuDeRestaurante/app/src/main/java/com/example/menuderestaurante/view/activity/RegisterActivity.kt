@@ -119,12 +119,6 @@ class RegisterActivity : AppCompatActivity() {
             resultado = false
         }
 
-//        if(edtRepeatPasswordRegister != edtPasswordRegister){
-//            findViewById<TextInputLayout>(R.id.txtRepeatPasswordRegister).error = "As senhas devem ser iguais"
-//            resultado = false
-//
-//        }
-
         return resultado
     }
 

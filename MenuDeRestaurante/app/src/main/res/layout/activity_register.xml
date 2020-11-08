@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.LoginActivity">
+    tools:context=".view.RegisterActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtEmailLogin"
+        android:id="@+id/txtNameRegister"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
-        android:hint="@string/email"
+        android:hint="Name"
         app:boxBackgroundColor="@android:color/transparent"
         app:hintTextColor="@color/colorGray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,33 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtEmailLogin"
+            android:id="@+id/edtNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmailRegister"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:hintTextColor="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNameRegister">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textWebEmailAddress"
@@ -33,7 +59,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtPasswordLogin"
+        android:id="@+id/txtPasswordRegister"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,10 +70,35 @@
         android:hint="@string/password"
         app:boxBackgroundColor="@android:color/transparent"
         app:hintTextColor="@color/colorGray"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmailLogin">
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailRegister">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtPasswordLogin"
+            android:id="@+id/edtPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:shadowColor="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtRepeatPasswordRegister"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:hint="Repeat password"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:hintTextColor="@color/colorGray"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegister">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtRepeatPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberPassword"
@@ -62,64 +113,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/colorSalmao"
         android:padding="14dp"
         android:text="@string/log_in"
         android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
-
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="52dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="@id/btnLogin">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:background="@color/colorAccent"/>
-
-        <TextView
-            android:id="@+id/textOr"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="OR" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:background="@color/colorAccent"/>
-    </LinearLayout>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="146dp"
-        android:backgroundTint="@color/colorGray"
-        android:padding="14dp"
-        android:text="@string/register"
-        android:textSize="21sp"
-        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

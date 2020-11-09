@@ -17,7 +17,7 @@ class MenuViewHolder (private val view: View): RecyclerView.ViewHolder(view) {
 
     fun bind (menu: com.example.menuderestaurante.model.Menu){
         title.text = menu.title
-        txtAddress.text = menu.addres
+        txtAddress.text = menu.text
         txtHour.text = menu.hour
 
 //        Picasso.get()

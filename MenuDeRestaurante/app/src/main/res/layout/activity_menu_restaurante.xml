@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".view.activity.MenuRestauranteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearImageMenuRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageMenuRestaurante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/img_camarao" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPratosPrincipaisRestaurante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pratos principais"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="36sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/colorDarkGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearImageMenuRestaurante" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMenuRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/txtPratosPrincipaisRestaurante"
+                tools:listitem="@layout/item_layout_menu_restaurante" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

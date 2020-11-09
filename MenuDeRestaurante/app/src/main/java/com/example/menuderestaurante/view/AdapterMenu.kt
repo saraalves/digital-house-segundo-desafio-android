@@ -6,10 +6,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.Menu
 
-    class AdapterMenu (private val dataSet: List<Menu>):
-    RecyclerView.Adapter<MenuViewHolder>(){
+class AdapterMenu(private val dataSet: List<Menu>) :
+    RecyclerView.Adapter<MenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout_home, parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_layout_home, parent, false)
 
         return MenuViewHolder(view)
     }

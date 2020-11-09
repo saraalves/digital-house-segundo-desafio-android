@@ -12,18 +12,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:background="@color/colorWhite">
 
-        <ImageView
-            android:id="@+id/imageMenuHome"
+        <LinearLayout
+            android:id="@+id/linearImageMenuHome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/ic_launcher_home_foreground" />
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageMenuHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/home1" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/txtTitleMenuHome"
@@ -36,7 +40,7 @@
             android:text="Tony Roma's"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageMenuHome" />
+            app:layout_constraintTop_toBottomOf="@+id/linearImageMenuHome" />
 
         <TextView
             android:id="@+id/txtAddressMenuHome"
@@ -58,10 +62,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textSize="18sp"
+            android:layout_marginBottom="16dp"
             android:textColor="@color/colorGray"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/roboto_medium"
             android:text="Fecha às 22:00"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtAddressMenuHome"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

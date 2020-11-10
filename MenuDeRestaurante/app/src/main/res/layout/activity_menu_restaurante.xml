@@ -34,6 +34,34 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/textTitleImageRestaurante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Tony Roma's"
+                app:layout_constraintBottom_toBottomOf="@+id/linearImageMenuRestaurante"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:theme="?attr/actionBarTheme" >
+
+                <ImageView
+                    android:id="@+id/imgViewBackRestaurante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
                 android:id="@+id/txtPratosPrincipaisRestaurante"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

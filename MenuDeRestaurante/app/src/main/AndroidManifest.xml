@@ -10,15 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.activity.MenuRestauranteActivity">
-        </activity>
-        <activity android:name=".view.activity.DetalheMenuActivity"/>
-        <activity android:name=".view.activity.HomeActivity"/>
-        <activity android:name=".view.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.DetalheMenuActivity" />
+        <activity android:name=".view.activity.HomeActivity" />
+        <activity android:name=".view.activity.SplashActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity android:name=".view.activity.RegisterActivity" />
         <activity android:name=".view.activity.LoginActivity" />

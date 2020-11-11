@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.Menu
 
-class AdapterMenu(private val dataSet: List<Menu>) :
+class AdapterMenu(private val dataSet: List<Menu>, private val listener: (Menu) -> Unit) :
     RecyclerView.Adapter<MenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
         val view =
@@ -21,7 +21,7 @@ class AdapterMenu(private val dataSet: List<Menu>) :
         val item = dataSet[position]
         holder.bind(item)
 
-        holder.itemView.setOnClickListener { item }
+        holder.itemView.setOnClickListener { listener(item) }
     }
 
 }

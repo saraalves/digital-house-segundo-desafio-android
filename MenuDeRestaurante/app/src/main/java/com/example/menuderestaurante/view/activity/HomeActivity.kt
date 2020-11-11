@@ -1,5 +1,6 @@
 package com.example.menuderestaurante.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -90,7 +91,10 @@ class HomeActivity : AppCompatActivity() {
                     ""
                 )
             )
-        )
+        ) {
+            val intent = Intent(this@HomeActivity, MenuRestauranteActivity::class.java)
+            startActivity(intent)
+        }
 
         recyclerViewHome.apply {
             setHasFixedSize(true)

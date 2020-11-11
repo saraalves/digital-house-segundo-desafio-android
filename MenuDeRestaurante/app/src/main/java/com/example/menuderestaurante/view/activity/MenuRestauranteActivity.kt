@@ -1,8 +1,10 @@
 package com.example.menuderestaurante.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import android.widget.ImageView
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,6 +22,14 @@ class MenuRestauranteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu_restaurante)
 
         inflarMenuRestaurante()
+
+        goBack()
+    }
+
+    private fun goBack() {
+        findViewById<ImageView>(R.id.imgViewBackRestaurante).setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun inflarMenuRestaurante() {
@@ -60,7 +70,10 @@ class MenuRestauranteActivity : AppCompatActivity() {
                     ""
                 )
             )
-        )
+        ) {
+            val intent = Intent(this@MenuRestauranteActivity, DetalheMenuActivity::class.java)
+            startActivity(intent)
+        }
 
         recyclerViewRestaurante.apply {
             setHasFixedSize(true)

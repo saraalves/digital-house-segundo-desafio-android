@@ -7,7 +7,7 @@ import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.DescriptionPratos
 import com.example.menuderestaurante.model.Menu
 
-class AdapterMenuRestaurante(private val dataSet: List<DescriptionPratos>):
+class AdapterMenuRestaurante(private val dataSet: List<DescriptionPratos>, private val listener: (DescriptionPratos) -> Unit):
     RecyclerView.Adapter<RestauranteViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestauranteViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout_menu_restaurante,
@@ -22,6 +22,6 @@ class AdapterMenuRestaurante(private val dataSet: List<DescriptionPratos>):
         val item = dataSet[position]
         holder.bind(item)
 
-        holder.itemView.setOnClickListener { item }
+        holder.itemView.setOnClickListener { listener(item) }
     }
 }

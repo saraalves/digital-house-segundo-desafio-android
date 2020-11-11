@@ -7,6 +7,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.Window
 import android.widget.Button
+import android.widget.ImageView
 import com.example.menuderestaurante.R
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -17,11 +18,18 @@ class RegisterActivity : AppCompatActivity() {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_register)
 
+        goBack()
         navigationToLogin()
         verifyFieldEmail()
         verifyFieldPassword()
         verifyFieldName()
         verifyFieldRepeatPassword()
+    }
+
+    private fun goBack() {
+        findViewById<ImageView>(R.id.imgViewBackRegister).setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun navigationToLogin() {

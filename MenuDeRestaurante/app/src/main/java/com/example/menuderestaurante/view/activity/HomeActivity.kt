@@ -22,6 +22,17 @@ class HomeActivity : AppCompatActivity() {
     private fun inflarMenuHome() {
         val linearManager = LinearLayoutManager(this)
         val recyclerViewHome = findViewById<RecyclerView>(R.id.recyclerHome)
+        val adapterMenuHome = adapterMenu()
+
+        recyclerViewHome.apply {
+            setHasFixedSize(true)
+            layoutManager = linearManager
+            adapter = adapterMenuHome
+            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        }
+    }
+
+    private fun adapterMenu(): AdapterMenu {
         val adapterMenuHome = AdapterMenu(
             arrayListOf(
                 Menu(
@@ -95,13 +106,7 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, MenuRestauranteActivity::class.java)
             startActivity(intent)
         }
-
-        recyclerViewHome.apply {
-            setHasFixedSize(true)
-            layoutManager = linearManager
-            adapter = adapterMenuHome
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        }
+        return adapterMenuHome
     }
 
 }

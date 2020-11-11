@@ -7,12 +7,9 @@ import android.view.Window
 import android.widget.ImageView
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.DescriptionPratos
-import com.example.menuderestaurante.model.Menu
-import com.example.menuderestaurante.view.AdapterMenu
 import com.example.menuderestaurante.view.AdapterMenuRestaurante
 
 class MenuRestauranteActivity : AppCompatActivity() {
@@ -35,7 +32,18 @@ class MenuRestauranteActivity : AppCompatActivity() {
     private fun inflarMenuRestaurante() {
         val gridManager = GridLayoutManager(this, 2)
         val recyclerViewRestaurante = findViewById<RecyclerView>(R.id.recyclerMenuRestaurante)
-        val adapterMenuRestaurante = AdapterMenuRestaurante(
+        val adapterMenuRestaurante = adapterMenuRestaurante()
+
+        recyclerViewRestaurante.apply {
+            setHasFixedSize(true)
+            layoutManager = gridManager
+            adapter = adapterMenuRestaurante
+            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        }
+    }
+
+    private fun adapterMenuRestaurante(): AdapterMenuRestaurante {
+        return AdapterMenuRestaurante(
             arrayListOf(
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
@@ -73,13 +81,6 @@ class MenuRestauranteActivity : AppCompatActivity() {
         ) {
             val intent = Intent(this@MenuRestauranteActivity, DetalheMenuActivity::class.java)
             startActivity(intent)
-        }
-
-        recyclerViewRestaurante.apply {
-            setHasFixedSize(true)
-            layoutManager = gridManager
-            adapter = adapterMenuRestaurante
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
     }
 }

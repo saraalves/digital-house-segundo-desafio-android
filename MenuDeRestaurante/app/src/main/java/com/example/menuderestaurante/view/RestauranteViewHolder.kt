@@ -8,14 +8,11 @@ import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.DescriptionPratos
 
 class RestauranteViewHolder (private val view: View): RecyclerView.ViewHolder(view)  {
-    private val imageView = view.findViewById<ImageView>(R.id.imageMenuHome)
+    private val imageView = view.findViewById<ImageView>(R.id.imageMenuRestaurante)
     private val txtDescriptionPrato = view.findViewById<TextView>(R.id.txtMenuRestaurante)
 
     fun bind (descriptionPratos: DescriptionPratos){
         txtDescriptionPrato.text = descriptionPratos.descricao
-
-//        Picasso.get()
-//            .load(menu.image)
-//            .into(imageView)
+        imageView.setImageResource(descriptionPratos.image)
     }
 }

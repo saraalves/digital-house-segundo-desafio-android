@@ -28,67 +28,67 @@ class HomeActivity : AppCompatActivity() {
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 Menu(
                     "Tony Roma's",
                     "Av. Lavandisca, 717 - Indianópolis, São Paulo",
                     "Fecha às 22:00",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 )
             )
         ) {

@@ -16,12 +16,10 @@ class MenuViewHolder (private val view: View): RecyclerView.ViewHolder(view) {
     private val txtHour = view.findViewById<TextView>(R.id.txtHourMenuHome)
 
     fun bind (menu: com.example.menuderestaurante.model.Menu){
+        imageView.setImageResource(menu.image)
         title.text = menu.title
         txtAddress.text = menu.text
         txtHour.text = menu.hour
-
-//        Picasso.get()
-//            .load(menu.image)
-//            .into(imageView)
+        
     }
 }

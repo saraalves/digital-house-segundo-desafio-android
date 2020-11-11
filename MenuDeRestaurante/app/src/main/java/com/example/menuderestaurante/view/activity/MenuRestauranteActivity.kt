@@ -39,35 +39,35 @@ class MenuRestauranteActivity : AppCompatActivity() {
             arrayListOf(
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    ""
+                    R.drawable.img_cafe_da_manha
                 )
             )
         ) {

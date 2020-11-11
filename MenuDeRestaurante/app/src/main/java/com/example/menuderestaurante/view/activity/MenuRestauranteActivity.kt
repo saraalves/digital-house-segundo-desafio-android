@@ -43,7 +43,15 @@ class MenuRestauranteActivity : AppCompatActivity() {
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
+                    R.drawable.img_hamburguer
+                ),
+                DescriptionPratos(
+                    "Salada com molho Gengibre ",
+                    R.drawable.img_sushi
+                ),
+                DescriptionPratos(
+                    "Salada com molho Gengibre ",
+                    R.drawable.img_camarao
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
@@ -51,23 +59,15 @@ class MenuRestauranteActivity : AppCompatActivity() {
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
+                    R.drawable.img_hamburguer
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
+                    R.drawable.img_camarao
                 ),
                 DescriptionPratos(
                     "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
-                ),
-                DescriptionPratos(
-                    "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
-                ),
-                DescriptionPratos(
-                    "Salada com molho Gengibre ",
-                    R.drawable.img_cafe_da_manha
+                    R.drawable.img_sushi
                 )
             )
         ) {

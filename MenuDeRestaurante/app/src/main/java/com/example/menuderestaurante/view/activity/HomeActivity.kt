@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.Menu
-import com.example.menuderestaurante.view.AdapterMenu
+import com.example.menuderestaurante.view.adapter.AdapterMenu
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,79 +33,80 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun adapterMenu(): AdapterMenu {
-        val adapterMenuHome = AdapterMenu(
-            arrayListOf(
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_cafe_da_manha
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_camarao
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_hamburguer
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_sushi
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_cafe_da_manha
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_camarao
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_sushi
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_cafe_da_manha
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_hamburguer
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_camarao
-                ),
-                Menu(
-                    "Tony Roma's",
-                    "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-                    "Fecha às 22:00",
-                    R.drawable.img_sushi
+        val adapterMenuHome =
+            AdapterMenu(
+                arrayListOf(
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_cafe_da_manha
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_camarao
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_hamburguer
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_sushi
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_cafe_da_manha
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_camarao
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_sushi
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_cafe_da_manha
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_hamburguer
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_camarao
+                    ),
+                    Menu(
+                        "Tony Roma's",
+                        "Av. Lavandisca, 717 - Indianópolis, São Paulo",
+                        "Fecha às 22:00",
+                        R.drawable.img_sushi
+                    )
                 )
-            )
-        ) {
-            val intent = Intent(this@HomeActivity, MenuRestauranteActivity::class.java)
-            startActivity(intent)
-        }
+            ) {
+                val intent = Intent(this@HomeActivity, MenuRestauranteActivity::class.java)
+                startActivity(intent)
+            }
         return adapterMenuHome
     }
 

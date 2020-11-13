@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.DescriptionPratos
-import com.example.menuderestaurante.view.AdapterMenuRestaurante
+import com.example.menuderestaurante.view.adapter.AdapterMenuRestaurante
 
 class MenuRestauranteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

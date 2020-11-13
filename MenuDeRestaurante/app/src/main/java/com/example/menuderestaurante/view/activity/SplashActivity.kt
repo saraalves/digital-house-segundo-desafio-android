@@ -8,7 +8,7 @@ import android.os.Looper
 import android.view.Window.FEATURE_NO_TITLE
 import com.example.menuderestaurante.R
 
-const val DURACAO_DO_SPLASH = 4000L // L de Long
+const val DURACAO_DO_SPLASH = 4000L
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

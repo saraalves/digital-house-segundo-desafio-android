@@ -34,7 +34,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun navigationToLogin() {
         findViewById<Button>(R.id.btnLoginRegister).setOnClickListener {
-            if(validarEntrada()){
+            if (validarEntrada()) {
                 intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                 startActivity(intent)
             }
@@ -87,18 +87,24 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun verifyFieldRepeatPassword() {
-        findViewById<TextInputEditText>(R.id.edtRepeatPasswordRegister).addTextChangedListener(object :
-            TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
+        findViewById<TextInputEditText>(R.id.edtRepeatPasswordRegister).addTextChangedListener(
+            object :
+                TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                }
 
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                }
 
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                findViewById<TextInputLayout>(R.id.txtRepeatPasswordRegister).error = ""
-            }
-        })
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    findViewById<TextInputLayout>(R.id.txtRepeatPasswordRegister).error = ""
+                }
+            })
     }
 
     fun validarEntrada(): Boolean {
@@ -107,7 +113,8 @@ class RegisterActivity : AppCompatActivity() {
         val edtNameRegister = findViewById<TextInputEditText>(R.id.edtNameRegister)
         val edtEmailRegister = findViewById<TextInputEditText>(R.id.edtEmailRegister)
         val edtPasswordRegister = findViewById<TextInputEditText>(R.id.edtPasswordRegister)
-        val edtRepeatPasswordRegister = findViewById<TextInputEditText>(R.id.edtRepeatPasswordRegister)
+        val edtRepeatPasswordRegister =
+            findViewById<TextInputEditText>(R.id.edtRepeatPasswordRegister)
 
         if (edtNameRegister.text?.trim()!!.isBlank()) {
             findViewById<TextInputLayout>(R.id.txtNameRegister).error = "Username vazio"
@@ -124,7 +131,7 @@ class RegisterActivity : AppCompatActivity() {
             resultado = false
         }
 
-        if(edtRepeatPasswordRegister.text?.trim()!!.isBlank()){
+        if (edtRepeatPasswordRegister.text?.trim()!!.isBlank()) {
             findViewById<TextInputLayout>(R.id.txtRepeatPasswordRegister).error = "Password vazio"
             resultado = false
         }

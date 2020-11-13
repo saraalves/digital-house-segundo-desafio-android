@@ -1,4 +1,4 @@
-package com.example.menuderestaurante.view
+package com.example.menuderestaurante.view.viewholder
 
 import android.view.Menu
 import android.view.View

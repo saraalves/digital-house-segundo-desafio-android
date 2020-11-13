@@ -17,10 +17,11 @@
         <LinearLayout
             android:id="@+id/linearImageMenuHome"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_height="wrap_content">
+            app:layout_constraintTop_toTopOf="parent">
+
             <ImageView
                 android:id="@+id/imageMenuHome"
                 android:layout_width="match_parent"
@@ -36,8 +37,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="@string/tony_romas_"
             android:textColor="@color/colorBlue"
-            android:text="Tony Roma's"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearImageMenuHome" />
@@ -48,9 +49,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="6dp"
-            android:maxLines="2"
             android:fontFamily="@font/roboto_medium"
-            android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
+            android:maxLines="2"
+            android:text="@string/address"
             android:textColor="@color/colorGray"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,15 +62,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textSize="18sp"
-            android:layout_marginBottom="16dp"
-            android:textColor="@color/colorGray"
             android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Fecha às 22:00"
+            android:text="@string/horário"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtAddressMenuHome"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddressMenuHome" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>

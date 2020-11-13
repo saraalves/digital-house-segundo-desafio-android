@@ -21,4 +21,13 @@
 * Esta receita pode conter sugestões de marcas somente para referência para o cálculo das informações nutricionais. Fique à vontade para escolher o produto do fornecedor ou fabricante que você preferir.
 Como fazer Salada de folhas com molho de iogurte e gengibre
 Lave as folhas e disponha em uma saladeira. Corte o rabanete em fatias, rasgue as folhas de repolho, e junte as folhas. Adicione a maçã e as nozes picadas. Reserve. Em uma tigela pequena, misture o iogurte, a mostarda, o sal, o azeite e o gengibre ralado. Distribua o molho sobre a salada, ou sirva a parte, em uma molheira.</string>
+    <string name="pratos_principais">Pratos principais</string>
+    <string name="or">OR</string>
+    <string name="tony_romas_">Tony Roma\'s</string>
+    <string name="pratos_principais">Pratos principais</string>
+    <string name="name">Name</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="address">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
+    <string name="horário">Fecha às 22:00</string>
+    <string name="salada_com_molho_gengibre">Salada com molho Gengibre</string>
 </resources>

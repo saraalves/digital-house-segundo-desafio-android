@@ -18,9 +18,7 @@ class LoginActivity : AppCompatActivity() {
 
         navigationToHome()
         navigationToRegister()
-
         verifyFieldEmail()
-
         verifyFieldPassword()
     }
 
@@ -54,23 +52,23 @@ class LoginActivity : AppCompatActivity() {
         })
     }
 
-    fun navigationToHome() {
+    private fun navigationToHome() {
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
-            if (validarEntrada()){
+            if (validarEntrada()) {
                 intent = Intent(this@LoginActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
         }
     }
 
-    fun navigationToRegister() {
+    private fun navigationToRegister() {
         findViewById<Button>(R.id.btnRegisterLogin).setOnClickListener {
             intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }
     }
 
-    fun validarEntrada(): Boolean {
+    private fun validarEntrada(): Boolean {
         var resultado = true
 
         val edtEmailLogin = findViewById<TextInputEditText>(R.id.edtEmailLogin)

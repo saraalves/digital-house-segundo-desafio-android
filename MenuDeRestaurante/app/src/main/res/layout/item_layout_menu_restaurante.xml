@@ -16,10 +16,11 @@
         <LinearLayout
             android:id="@+id/linearImageMenuRestaurante"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_height="wrap_content">
+            app:layout_constraintTop_toTopOf="parent">
+
             <ImageView
                 android:id="@+id/imageMenuRestaurante"
                 android:layout_width="match_parent"
@@ -34,16 +35,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/roboto_medium"
-            android:textColor="@color/colorDarkGray"
-            android:maxLines="2"
-            android:gravity="center"
-            android:text="Salada com molho Gengibre "
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="6dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/salada_com_molho_gengibre"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearImageMenuRestaurante" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

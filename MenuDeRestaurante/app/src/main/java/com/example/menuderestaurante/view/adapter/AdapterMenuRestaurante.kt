@@ -1,11 +1,11 @@
-package com.example.menuderestaurante.view
+package com.example.menuderestaurante.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.DescriptionPratos
-import com.example.menuderestaurante.model.Menu
+import com.example.menuderestaurante.view.viewholder.RestauranteViewHolder
 
 class AdapterMenuRestaurante(private val dataSet: List<DescriptionPratos>, private val listener: (DescriptionPratos) -> Unit):
     RecyclerView.Adapter<RestauranteViewHolder>() {
@@ -13,7 +13,9 @@ class AdapterMenuRestaurante(private val dataSet: List<DescriptionPratos>, priva
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout_menu_restaurante,
                 parent, false)
 
-        return RestauranteViewHolder(view)
+        return RestauranteViewHolder(
+            view
+        )
     }
 
     override fun getItemCount() = dataSet.size

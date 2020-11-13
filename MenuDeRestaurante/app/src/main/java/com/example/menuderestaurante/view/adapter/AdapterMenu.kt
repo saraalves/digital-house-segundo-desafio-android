@@ -1,10 +1,11 @@
-package com.example.menuderestaurante.view
+package com.example.menuderestaurante.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.menuderestaurante.R
 import com.example.menuderestaurante.model.Menu
+import com.example.menuderestaurante.view.viewholder.MenuViewHolder
 
 class AdapterMenu(private val dataSet: List<Menu>, private val listener: (Menu) -> Unit) :
     RecyclerView.Adapter<MenuViewHolder>() {

@@ -13,7 +13,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/linearImageMenuRestaurante"
@@ -41,7 +41,7 @@
                 android:textSize="36sp"
                 android:layout_marginStart="24dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="Tony Roma's"
+                android:text="@string/tony_romas_"
                 app:layout_constraintBottom_toBottomOf="@+id/linearImageMenuRestaurante"/>
 
             <androidx.appcompat.widget.Toolbar
@@ -65,7 +65,7 @@
                 android:id="@+id/txtPratosPrincipaisRestaurante"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pratos principais"
+                android:text="@string/pratos_principais"
                 android:fontFamily="@font/roboto_medium"
                 android:textSize="36sp"
                 android:layout_marginStart="18dp"
